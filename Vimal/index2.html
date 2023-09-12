@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer 2</title>
+    <style>
+        .content {
+            gap: 4px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body onload="changeValueBy(0)">
+    <div class="content">
+        <button id="min">-</button>
+        <div id="value"></div>
+        <button id="max">+</button>
+    </div>
+    <div id="sample">Sample Text</div>
+</body>
+    <script>
+        let value = 16;
+        const min = document.getElementById("min")
+        const max = document.getElementById("max")
+        const valueTag = document.getElementById('value')
+        const sampleTag = document.getElementById('sample')
+
+        const changeValueBy = (num) => {
+            value += num;
+            valueTag.innerText = value;
+            sampleTag.style.fontSize = `${value}px`;
+        }
+
+        min.addEventListener('click', function () {
+            changeValueBy(-1)
+        })
+
+        max.addEventListener('click', function () {
+            changeValueBy(1)
+        })
+    </script>
+</html>

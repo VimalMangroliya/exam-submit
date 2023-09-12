@@ -1,0 +1,103 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+}
+
+.content {
+    margin: auto;
+    max-width: 75vh;
+    border: 2px solid black;
+}
+
+.heading {
+    padding: 1rem;
+    margin: unset;
+    background-color: #EEE;
+    text-align: center;
+}
+
+.product {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    gap: 1rem;
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.image {
+    max-width: 150px;
+}
+
+.price-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-strip>h2 {
+    margin: 0.5rem;
+}
+
+.description {
+    padding: 1rem;
+}
+
+.description>h4 {
+    padding: 1rem;
+    margin: unset;
+    margin-left: 1rem;
+}
+
+.cta {
+    padding: 0.5rem;
+    background-color: red;
+}
+
+.cta>h3 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.strip {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.strip>span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.strip>span:nth-child(1) {
+    background-color: purple;
+}
+
+.strip>span:nth-child(2) {
+    background-color: darkblue
+}
+
+.strip>span:nth-child(3) {
+    background-color: pink;
+}
+
+.strip>span:nth-child(4) {
+    background-color: yellow;
+}
+
+.strip>span:nth-child(5) {
+    background-color: green;
+}
